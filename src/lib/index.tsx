@@ -1,8 +1,5 @@
-import SearchInput from './SearchInput';
-import './global.css';
-
-const SupportUI = {
-  SearchInput,
+const SupportUI = () => {
+  return <div>SupportUI</div>;
 };
 
 export default SupportUI;

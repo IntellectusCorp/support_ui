@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2016",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "declaration": true,
+    "outDir": "./dist"
   },
   "include": [
-    "src"
+    "./custom.d.ts",
+    "./src/lib/**/*.tsx",
+    "./src/lib/**/*.ts",
+    "./src/lib/**/*.css"
   ]
 }

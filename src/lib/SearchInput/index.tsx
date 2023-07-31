@@ -3,7 +3,7 @@ import Input from './Input';
 import SearchResult from './SearchResult';
 import { TSearchInputResult } from './types';
 
-interface SearchInputProps {
+export interface SearchInputProps {
   width?: number;
   resultHeight?: number;
   resultPosition?: 'TOP' | 'BOTTOM';
