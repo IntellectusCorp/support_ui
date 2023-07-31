@@ -1,6 +1,6 @@
 {
   "name": "int2_support_ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "description": "Cool UI library",
   "module": "dist/index.js",
