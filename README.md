@@ -16,6 +16,14 @@ const TestComponent = () => {
 }
 ```
 
+## How to publish to npm
+First, open command line interface and move to root directory
+```js
+npm login
+
+npm publish // needs npm maintainer role
+```
+
 ## Todo
  - [ ] Pack svg image.
  - [ ] Search result pagenation.
