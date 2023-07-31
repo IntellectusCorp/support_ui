@@ -33,7 +33,7 @@ const SearchResult = ({ data, onClickBookmark, hasBookmark }: SearchResultProps)
       <div style={{ display: 'flex', cursor: 'pointer', alignItems: 'center' }} onClick={handleClickBookmark}>
         <button
           id={hasBookmark ? 'support-ui-icon-star-fill' : 'support-ui-icon-star'}
-          style={{ backgroundColor: hasBookmark ? '#FFD233' : '#fff', width: 50, height: 50, borderRadius: 25, border: 'none', boxShadow: 'none' }}
+          style={{ backgroundColor: hasBookmark ? '#FFD233' : 'rgba(0,0,0,0.1)', width: 50, height: 50, borderRadius: 25, border: 'none', boxShadow: 'none' }}
         />
         {/* <img
           src={hasBookmark ? IconStarFill : IconStar}

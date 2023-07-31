@@ -45,7 +45,7 @@ const Input = ({ onClickBookmark, value, onChange, showBookmarks }: InputProps) 
         onClick={handleBookMark}>
         <button
           id='support-ui-icon-star-fill'
-          style={{ backgroundColor: showBookmarks ? '#FFD233' : '#fff', width: 26, height: 26, borderRadius: 13, border: 'none', boxShadow: 'none' }}
+          style={{ backgroundColor: showBookmarks ? '#FFD233' : 'rgba(0,0,0,0.1)', width: 26, height: 26, borderRadius: 13, border: 'none', boxShadow: 'none' }}
         />
         {/* <img src={showBookmarks ? IconStarFill : IconStar} className='support-ui-icon-star-fill' alt='support-ui-icon-star-fill' width={26} height={26} /> */}
       </div>
