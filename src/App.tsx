@@ -1,13 +1,8 @@
+import React from 'react';
 import './App.css';
-import SupportUI from './lib';
 
 function App() {
-  return (
-    <div className='App'>
-      <div style={{ height: 50 }} />
-      <SupportUI.SearchInput />
-    </div>
-  );
+  return <div className='App'></div>;
 }
 
 export default App;
