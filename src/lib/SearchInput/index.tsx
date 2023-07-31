@@ -41,7 +41,7 @@ const SearchInput = ({ width = 800, resultHeight = 800 }: SearchInputProps) => {
   return (
     <div style={{ display: 'flex', width: width, flexDirection: 'column' }}>
       <Input value={text} onChange={onChangeInput} showBookmarks={showBookmarks} onClickBookmark={() => setShowBookmarks(cur => !cur)} />
-      <div style={{ display: 'flex', flexDirection: 'column', padding: '0 16px', overflow: 'auto', height: resultHeight }}>
+      <div style={{ display: 'flex', flexDirection: 'column', padding: '0 16px', overflow: 'auto', height: resultHeight, boxSizing: 'border-box' }}>
         {showBookmarks
           ? bookmarkList.map((item, idx) => {
               return <SearchResult key={idx} data={item} hasBookmark={true} onClickBookmark={() => onClickBookmark(item)} />;

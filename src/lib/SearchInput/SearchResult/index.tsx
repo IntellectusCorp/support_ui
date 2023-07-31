@@ -1,5 +1,3 @@
-import IconStarFill from '../icon-star-fill.svg';
-import IconStar from '../icon-star.svg';
 import { TSearchInputResult } from '../types';
 
 interface SearchResultProps {
@@ -13,7 +11,7 @@ const SearchResult = ({ data, onClickBookmark, hasBookmark }: SearchResultProps)
   };
 
   return (
-    <div style={{ display: 'flex', borderBottom: '1px solid rgba(0,0,0,0.1)', padding: '16px 0', gap: 16, width: '100%' }}>
+    <div style={{ display: 'flex', borderBottom: '1px solid rgba(0,0,0,0.1)', padding: '16px 0', gap: 16, width: '100%', boxSizing: 'border-box' }}>
       <div
         style={{
           display: 'block',
@@ -33,13 +31,13 @@ const SearchResult = ({ data, onClickBookmark, hasBookmark }: SearchResultProps)
         </a>
       </div>
       <div style={{ display: 'flex', cursor: 'pointer', alignItems: 'center' }} onClick={handleClickBookmark}>
-        <img
+        {/* <img
           src={hasBookmark ? IconStarFill : IconStar}
           alt={hasBookmark ? 'support-ui-icon-star-fill' : 'support-ui-icon-star'}
           width={50}
           height={50}
           style={{ pointerEvents: 'none' }}
-        />
+        /> */}
       </div>
     </div>
   );

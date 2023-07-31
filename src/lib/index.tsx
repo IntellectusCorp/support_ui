@@ -1,5 +1,7 @@
-const SupportUI = () => {
-  return <div>SupportUI</div>;
+import SearchInput from './SearchInput';
+
+const SupportUI = {
+  SearchInput,
 };
 
 export default SupportUI;

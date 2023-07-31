@@ -1,8 +1,3 @@
-import iconSearch from '../icon-search.svg';
-import IconStarFill from '../icon-star-fill.svg';
-import IconStar from '../icon-star.svg';
-import './input.css';
-
 interface InputProps {
   showBookmarks: boolean;
   onClickBookmark: Function;
@@ -18,13 +13,37 @@ const Input = ({ onClickBookmark, value, onChange, showBookmarks }: InputProps) 
   };
 
   return (
-    <div className='input_container'>
-      <div className='icon_container'>
-        <img src={iconSearch} className='support-ui-icon-search' alt='support-ui-icon-search' width={26} height={26} />
+    <div
+      style={{
+        display: 'flex',
+        width: '100%',
+        height: 40,
+        border: '1px solid #000',
+        borderRadius: 100,
+        padding: '0 16px',
+        gap: 10,
+        boxSizing: 'border-box',
+      }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+        }}>
+        {/* <img src={iconSearch} className='support-ui-icon-search' alt='support-ui-icon-search' width={26} height={26} /> */}
       </div>
-      <input className='input' value={value} onChange={onChangeInput} />
-      <div className='icon_container cursor_pointer' onClick={handleBookMark}>
-        <img src={showBookmarks ? IconStarFill : IconStar} className='support-ui-icon-star-fill' alt='support-ui-icon-star-fill' width={26} height={26} />
+      <input
+        value={value}
+        onChange={onChangeInput}
+        style={{ display: 'flex', flex: 1, border: 'none', outline: 'none', backgroundColor: 'transparent', fontSize: 16 }}
+      />
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          cursor: 'pointer',
+        }}
+        onClick={handleBookMark}>
+        {/* <img src={showBookmarks ? IconStarFill : IconStar} className='support-ui-icon-star-fill' alt='support-ui-icon-star-fill' width={26} height={26} /> */}
       </div>
     </div>
   );
