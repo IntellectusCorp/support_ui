@@ -1,10 +1,13 @@
 # Support UI
+The Support UI is React library for my team
 
 ## Warning
 🛠️🛠️🛠️This Library is in development🛠️🛠️🛠️
-## Install
+
+## Installation
+using npm:
 ```js
-npm install int2_support_ui
+$ npm install int2_support_ui
 ```
 
 ## Usage
@@ -16,13 +19,9 @@ const TestComponent = () => {
 }
 ```
 
-## How to publish to npm
-First, open command line interface and move to root directory
-```js
-npm login
+## Contributing
 
-npm publish // needs npm maintainer role
-```
+See the [Contributing Guide](https://google.com) for more details on contributing.
 
 ## Todo
  - [ ] Pack svg image.
