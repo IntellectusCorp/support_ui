@@ -21,7 +21,7 @@ const TestComponent = () => {
 
 ## Contributing
 
-See the [Contributing Guide](https://google.com) for more details on contributing.
+See the [Contributing Guide](https://github.com/IntellectusCorp/support_ui/blob/main/Contributing.md) for more details on contributing.
 
 ## Todo
  - [ ] Pack svg image.
