@@ -7,8 +7,9 @@ export interface SearchInputProps {
   width?: number;
   resultHeight?: number;
   resultPosition?: 'TOP' | 'BOTTOM';
+  onSearch?:(string: string) => Promise<void>
 }
-const SearchInput = ({ width = 800, resultHeight = 800 }: SearchInputProps) => {
+const SearchInput = ({ width = 800, resultHeight = 800, onSearch }: SearchInputProps) => {
   const [text, setText] = useState('');
   const [searchResult, setSearchResult] = useState<Array<TSearchInputResult>>([]);
   const [bookmarkList, setBookMarkList] = useState<Array<TSearchInputResult>>([]);
@@ -18,11 +19,15 @@ const SearchInput = ({ width = 800, resultHeight = 800 }: SearchInputProps) => {
     setText(value);
   };
 
-  const updateResult = (_text: string) => {
-    if (_text.trim() === '') {
-      setSearchResult([]);
-    } else {
-      setSearchResult(exampleData.filter(item => item.title.toLowerCase().includes(_text) || item.content.toLowerCase().includes(_text)));
+  const updateResult = async(_text: string) => {
+    if(onSearch){
+      onSearch(_text.trim())
+    }else{
+      if (_text.trim() === '') {
+        setSearchResult([]);
+      } else {
+        setSearchResult(exampleData.filter(item => item.title.toLowerCase().includes(_text) || item.content.toLowerCase().includes(_text)));
+      }
     }
   };
   const onClickBookmark = (item: TSearchInputResult) => {
