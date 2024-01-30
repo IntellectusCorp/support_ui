@@ -1,6 +1,6 @@
 # Support UI
 <a href="https://www.npmjs.com/package/int2_support_ui" target="_blank"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white&link=https://www.npmjs.com/package/int2_support_ui"/></a>   
-The Support UI is React library for my team
+React library for Intellectus data team
 
 ## Warning
 🛠️🛠️🛠️This Library is in development🛠️🛠️🛠️
