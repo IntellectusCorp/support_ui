@@ -4,3 +4,5 @@ public/
 tsconfig.json
 .prettierrc.*
 Contributing.md
+support_ui/
+.env

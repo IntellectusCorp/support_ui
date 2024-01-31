@@ -1,9 +1,9 @@
-import Flex from './Flex';
 import SearchInput from './SearchInput';
+import Throughput from './Throughput';
 
 const SupportUI = {
   SearchInput,
-  Flex,
+  Throughput
 };
 
 export default SupportUI;

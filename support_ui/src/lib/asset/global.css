@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  pointer-events: none;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}

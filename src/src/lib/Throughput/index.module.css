@@ -1,0 +1,83 @@
+.pageContainer {
+  width: 100%;
+  justify-content: center;
+}
+
+.barContainer{
+  position: relative;
+  border-radius: 20px / 30px;
+  overflow: hidden;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 0 5%, rgba(0, 0, 0, 0) 40% 60%, rgba(0, 0, 0, 0.1) 95% 100%);
+}
+
+.barContainer::before{
+  position: absolute;
+  width:30px;
+  height:calc(100% - 3px);
+  right:0;
+  top:0;
+  border-radius: 20px / 30px;
+  border-left: 1px dashed rgba(0,0,0,0.1);
+  content: '';
+}
+
+.barContainer::after{
+  position: absolute;
+  width:30px;
+  height:calc(100% - 3px);
+  left:0;
+  top:0;
+  border-radius: 20px / 30px;
+  border: 1px solid rgba(0,0,0,0.1);
+  content: '';
+}
+
+.barInnerContainer {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px / 30px;
+}
+
+.barInnerContainer::after{
+  position: absolute;
+  height: 100%;
+  left:0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 20px / 30px;
+  /* background-color:  rgba(0,0,0,0.05);
+  width:25px; */
+  background: linear-gradient(rgba(0,0,0,0.1) 0 5%, rgba(0,0,0,0) 50% ,rgba(0,0,0,0.1) 95% 100%);
+  content: '';
+}
+
+.graphWrapper {
+  
+}
+
+.graphWrapper::after {
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 20px / 30px;
+  background-color:  rgba(0,0,0,0.1);
+  width:25px;
+  content: '';
+}
+
+.lackCountText {
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+  color: white;
+  font-family: '굴림', verdana, sans-serif;
+  z-index: 2;
+}

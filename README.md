@@ -3,7 +3,7 @@
 React library for Intellectus data team
 
 ## Warning
-🛠️🛠️🛠️This Library is in development🛠️🛠️🛠️
+This library is continuously being developed and maintained.🛠️🛠️🛠️
 
 ## Installation
 using npm:
@@ -17,6 +17,29 @@ import SupportUI from "int2_support_ui";
 
 const TestComponent = () => {
   return <SupportUI.SearchInput />
+}
+
+const TestThroughput = () => {
+  const [inputData, setInputData] = useState<NodeDataType>([]);
+
+  const inputDataChangeInterval = () => {
+    setInterval(async() => {
+      const data = await getData(); // replace to your GET api or something
+      setInputData(data);
+      setCount(cur => (cur + 1) % 60)
+    }, 1000);
+  };
+
+  useEffect(() => inputDataChangeInterval(), []);
+
+  return (
+    <SupportUI.Throughput 
+        maxLength={5}
+        inputData={inputData}
+        graphWidth={500}
+        graphHeight={50}
+    />
+  )
 }
 ```
 

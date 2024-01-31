@@ -1,0 +1,7 @@
+.componentContainer {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  transition: left ease-out 1s, top ease-out .8s, opacity linear .5s;
+}
